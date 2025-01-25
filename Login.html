@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Login Page</title>
+    <meta charset="UTF-8"> <!-- # Define the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- # Ensure the page is responsive and fits the device's width -->
+    <title>Futuristic Login Page</title> <!-- # Title of the page -->
     <style>
+        /* # Style for the body to center the login form and set the background color */
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #0d0d0d;
-            font-family: Arial, sans-serif;
+            margin: 0; /* # Remove default margin */
+            padding: 0; /* # Remove default padding */
+            display: flex; /* # Use flexbox for centering */
+            justify-content: center; /* # Center horizontally */
+            align-items: center; /* # Center vertically */
+            height: 100vh; /* # Full height of the viewport */
+            background-color: #0d0d0d; /* # Dark background color */
+            font-family: Arial, sans-serif; /* # Font for the text */
         }
+        /* # Style for the login container */
         .login-container {
-            background: #1a1a1a;
-            border: 2px solid #00f0ff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 20px #00f0ff;
-            text-align: center;
+            background: #1a1a1a; /* # Dark background for the container */
+            border: 2px solid #00f0ff; /* # Cyan border */
+            border-radius: 10px; /* # Rounded corners */
+            padding: 20px; /* # Padding inside the container */
+            box-shadow: 0 0 20px #00f0ff; /* # Cyan shadow around the container */
+            text-align: center; /* # Center text inside the container */
         }
+        /* # Style for the heading in the login container */
         .login-container h2 {
-            color: #00f0ff;
-            margin-bottom: 20px;
+            color: #00f0ff; /* # Cyan text color */
+            margin-bottom: 20px; /* # Space below the heading */
         }
+        /* # Style for the input fields */
         .login-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #00f0ff;
-            border-radius: 5px;
-            background: #0d0d0d;
-            color: #00f0ff;
+            width: 100%; /* # Full width */
+            padding: 10px; /* # Padding inside the input */
+            margin: 10px 0; /* # Space between inputs */
+            border: 1px solid #00f0ff; /* # Cyan border */
+            border-radius: 5px; /* # Rounded corners */
+            background: #0d0d0d; /* # Dark background color */
+            color: #00f0ff; /* # Cyan text color */
         }
+        /* # Style for the submit button */
         .login-container input[type="submit"] {
-            background: #00f0ff;
-            color: #0d0d0d;
-            cursor: pointer;
+            background: #00f0ff; /* # Cyan background color */
+            color: #0d0d0d; /* # Dark text color */
+            cursor: pointer; /* # Pointer cursor on hover */
         }
+        /* # Change the background color of the submit button on hover */
         .login-container input[type="submit"]:hover {
-            background: #00c0cc;
+            background: #00c0cc; /* # Slightly darker cyan color */
         }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>LOGIN</h2>
+        <h2>LOGIN</h2> <!-- # Heading of the login form -->
+        <!-- # Login form -->
         <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <input type="text" placeholder="Username" required> <!-- # Username input field -->
+            <input type="password" placeholder="Password" required> <!-- # Password input field -->
+            <input type="submit" value="Login"> <!-- # Submit button -->
         </form>
     </div>
 </body>
